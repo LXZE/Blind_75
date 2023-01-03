@@ -1,0 +1,29 @@
+[
+	{
+		"key": "ctrl+r",
+		"command": "-python.refreshTensorBoard",
+		"when": "python.hasActiveTensorBoardSession"
+	},
+	{
+		"key": "ctrl+r",
+		"command": "-workbench.action.openRecent"
+	},
+	{
+		"key": "ctrl+r",
+		"command": "workbench.action.tasks.runTask",
+		"args": "run elixir",
+		"when": "editorLangId == elixir"
+	},
+	{
+		"key": "ctrl+r",
+		"command": "workbench.action.tasks.runTask",
+		"args": "run python",
+		"when": "editorLangId == python"
+	},
+	{
+		"key": "ctrl+c",
+		"command": "workbench.action.terminal.sendSequence",
+		"args": { "text": "\u0003" },
+		"when": "taskRunning"
+	}
+]

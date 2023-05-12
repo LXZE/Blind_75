@@ -6,6 +6,12 @@
 			"type": "shell",
 			"command": "(cd ${fileDirname} && time timeout 5 elixir ${fileBasename})",
 			"problemMatcher": []
+		},
+		{
+			"label": "run python",
+			"type": "shell",
+			"command": "(cd ${fileDirname} && time timeout 5 python ${fileBasename})",
+			"problemMatcher": []
 		}
 	]
 }
